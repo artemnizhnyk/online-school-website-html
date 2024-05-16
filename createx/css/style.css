@@ -1,7 +1,7 @@
 html, body {
     color: #424551;
-    font-family: Lato, sans-serif;
-    line-height: 160%;
+    font-family: Lato, Arial, sans-serif;
+    line-height: 1.6;
 }
 
 .wrapper {
@@ -20,12 +20,33 @@ html, body {
 }
 
 .button {
+    font-weight: 700;
+    line-height: 3.25;
+    text-align: center;
+    color: #fff;
+    white-space: nowrap;
 
+    border-width: 0;
+    border-radius: 4px;
+    padding: 0 40px;
+    width: 206px;
+    height: 52px;
+    background: linear-gradient(45deg, #ff3f3a 0%, #f75e05 100%);
+
+    transition: all .3s;
+}
+
+.button:hover {
+    transform: scale(103%);
+}
+
+.button:active {
+    transform: scale(100%);
 }
 
 /*header*/
 .header {
-
+    font-weight: 700;
 }
 
 /*header__top*/
@@ -36,9 +57,11 @@ html, body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 20px 0;
 }
 
 .header__logo {
+    margin-right: 60px;
 }
 
 .header__nav {
@@ -50,21 +73,56 @@ html, body {
 }
 
 .header__nav-item {
+    margin-right: 40px;
+    white-space: nowrap;
+}
+
+.header__nav-item:last-child {
+    margin-right: 0;
 }
 
 .header__nav-link {
+    text-decoration: none;
+}
+
+.header__nav-link:hover {
+    color: #ff3f3a;
+    transition: all .3s;
 }
 
 .header__btn-box {
+    display: flex;
+    align-items: center;
 }
 
 .header__top-button {
+    margin-right: 36px;
 }
 
-.header__user {
+.header__user-nav {
+    position: relative;
+    white-space: nowrap;
+    padding-left: 28px;
+}
+
+.header__user-nav:before {
+    content: "";
+    background: url("../img/icons/user-icon.svg") no-repeat;
+    width: 20px;
+    height: 20px;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
 }
 
 .header__user-btn {
+}
+
+.header__user-btn:hover {
+    color: #ff3f3a;
+    transition: all .3s;
 }
 
 /*header__body*/
