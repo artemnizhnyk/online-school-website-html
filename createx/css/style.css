@@ -281,6 +281,7 @@ html, body {
 
 /*about*/
 .about {
+    padding-top: 180px;
 }
 
 .about__inner {
@@ -288,9 +289,20 @@ html, body {
 
 .about__createx {
     display: flex;
+    position: relative;
     justify-content: space-between;
     align-items: flex-end;
     margin-bottom: 179px;
+}
+
+.about__createx:after {
+    content: "";
+    position: absolute;
+    top: -80px;
+    right: -170px;
+    background: url("../img/decorations/1.svg");
+    width: 100px;
+    height: 85px;
 }
 
 .about__createx-content {
@@ -336,4 +348,45 @@ html, body {
 }
 
 .about__values {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about__image-box {
+    margin-right: 30px;
+}
+
+.about__image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about__numbers {
+    align-self: center;
+}
+
+.about__number {
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 20px;
+
+    font-weight: 700;
+    font-size: 18px;
+    color: #1e212c;
+}
+
+.about__number:last-child {
+    margin-bottom: 0;
+}
+
+.about__number > span {
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 1.3;
+    letter-spacing: 0.02em;
+    color: #ff3f3a;
+
+    margin-right: 16px;
 }
