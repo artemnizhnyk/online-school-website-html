@@ -599,7 +599,19 @@ html, body {
 
 .certificate__inner {
     display: flex;
+    position: relative;
     justify-content: space-between;
+}
+
+.certificate__inner:before {
+    content: "";
+    position: absolute;
+    background: url("../img/decorations/4.svg");
+    width: 60px;
+    height: 60px;
+    top: -12px;
+    left: -164px;
+    translate: -100% 0;
 }
 
 .certificate__content {
