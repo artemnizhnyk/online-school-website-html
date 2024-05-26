@@ -87,6 +87,23 @@ html, body {
     line-height: 1.3;
 }
 
+.left-btn {
+    background: url("../img/icons/arrow-left.svg") 0 0 no-repeat;
+    width: 24px;
+    height: 24px;
+}
+
+.left-btn:hover {
+    border: #cb0000 solid 4px;
+    z-index: -1;
+}
+
+.right-btn {
+    background: url("../img/icons/arrow-right.svg") 0 0 no-repeat;
+    width: 24px;
+    height: 24px;
+}
+
 /*header*/
 .header {
     display: flex;
@@ -616,7 +633,7 @@ html, body {
 
 .certificate__content {
     max-width: 392px;
-    margin-right: 135px;
+    margin-right: 30px;
 }
 
 .certificate__heading {
@@ -637,10 +654,84 @@ html, body {
 }
 
 .certificate__img-box {
-
+    margin-inline: -60px;
 }
 
 .certificate__img-box img {
+    object-fit: contain;
     width: 100%;
     height: 100%;
+
+}
+
+/*team*/
+.team {
+
+}
+
+.team__inner {
+}
+
+.team__heading {
+}
+
+.team__upper-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.team__heading {
+}
+
+.team__btn-box {
+}
+
+.team__left-btn {
+}
+
+.team__right-btn {
+
+}
+
+.team-list {
+    display: flex;
+    padding-top: 60px;
+}
+
+.team-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30px
+}
+
+.team-item:last-child {
+    margin-right: 0;
+}
+
+
+.team__image-box {
+}
+
+.team__image-box {
+    width: 100%;
+    height: 100%;
+}
+
+.team__info {
+    padding-top: 16px;
+}
+
+.team__name {
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+}
+
+.team__role {
+    font-weight: 400;
+    color: #787a80;
+    text-align: center;
+
 }
