@@ -591,3 +591,44 @@ html, body {
 .directions__link-btn:hover {
     color: #ff3f3a;
 }
+
+/*certificate*/
+.certificate {
+    padding-top: 178px;
+}
+
+.certificate__inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.certificate__content {
+    max-width: 392px;
+    margin-right: 135px;
+}
+
+.certificate__heading {
+}
+
+.certificate__text {
+    margin-top: 48px;
+    font-weight: 400;
+}
+
+.certificate__list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 46px;
+}
+
+.certificate__list-item {
+}
+
+.certificate__img-box {
+
+}
+
+.certificate__img-box img {
+    width: 100%;
+    height: 100%;
+}
