@@ -91,17 +91,30 @@ html, body {
     background: url("../img/icons/arrow-left.svg") 0 0 no-repeat;
     width: 24px;
     height: 24px;
+    border-radius: 100%;
+    transition: .3s;
 }
 
 .left-btn:hover {
-    border: #cb0000 solid 4px;
-    z-index: -1;
+    background: #ff3f3a url("../img/icons/arrow-left-white.svg") 0 0 no-repeat;
+    color: #d00909;
+    box-shadow: 0 0 0 12px rgb(255, 63, 58);
+    border-radius: 100%;
 }
 
 .right-btn {
     background: url("../img/icons/arrow-right.svg") 0 0 no-repeat;
     width: 24px;
     height: 24px;
+    border-radius: 100%;
+    transition: .3s;
+}
+
+.right-btn:hover {
+    background: #ff3f3a url("../img/icons/arrow-right-white.svg") 0 0 no-repeat;
+    color: #d00909;
+    box-shadow: 0 0 0 12px rgb(255, 63, 58);
+    border-radius: 100%;
 }
 
 /*header*/
@@ -684,9 +697,11 @@ html, body {
 }
 
 .team__btn-box {
+    align-self: end;
 }
 
 .team__left-btn {
+    margin-right: 24px;
 }
 
 .team__right-btn {
@@ -710,13 +725,61 @@ html, body {
     margin-right: 0;
 }
 
-
 .team__image-box {
+    position: relative;
+    z-index: 5;
+    transition: background 2s ease-in-out;
 }
 
-.team__image-box {
+.team__image-box img {
     width: 100%;
     height: 100%;
+}
+
+.team__social-media {
+    display: none;
+    position: absolute;
+    top: 300px;
+    width: 24px;
+    height: 24px;
+    z-index: 5;
+    transition: filter 0.3s;
+}
+
+.team__social-media:hover {
+    filter: brightness(200%);
+}
+
+.team__social-media:nth-child(1) {
+    left: 186px;
+}
+
+.team__social-media:nth-child(2) {
+    left: 213px;
+}
+
+.team__social-media:nth-child(3) {
+    left: 246px;
+}
+
+.team__image-box:hover .team__social-media {
+    display: inline-block;
+}
+
+.team__image-box:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(30, 33, 44, 0) 43.9%, rgba(30, 33, 44, 0.03) 55.21%, rgba(30, 33, 44, 0.33) 68.73%, rgba(30, 33, 44, 0.56) 76.17%, rgba(30, 33, 44, 0.77) 83.75%, rgba(30, 33, 44, 0.92) 91.49%, #1e212c 100%);
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+}
+
+.team__image-box:hover:after {
+  opacity: 1;
 }
 
 .team__info {
