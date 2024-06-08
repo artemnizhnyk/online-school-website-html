@@ -797,5 +797,15 @@ html, body {
     font-weight: 400;
     color: #787a80;
     text-align: center;
+}
 
+/*say*/
+.say {
+    padding-top: 180px;
+}
+
+.say__inner {
+}
+
+.say__heading {
 }
