@@ -802,10 +802,126 @@ html, body {
 /*say*/
 .say {
     padding-top: 180px;
+    background: url("../img/decorations/testi-bg.svg") 125% 15% no-repeat #f4f5f7;
 }
 
 .say__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .say__heading {
+}
+
+.say__slider-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    padding: 0 50px;
+}
+
+.say__slider {
+    max-width: 1020px;
+    margin: 0 auto;
+}
+
+.say__slide {
+    padding: 64px;
+    box-shadow: 0 4px 4px -4px rgba(30, 33, 44, 0.06), 0 12px 10px -6px rgba(154, 156, 165, 0.04), 0 30px 24px -10px rgba(154, 156, 165, 0.05), 0 80px 80px -20px rgba(154, 156, 165, 0.08);
+    background: #fff;
+}
+
+.say__slide__inner {
+    max-width: 810px;
+    margin: 0 auto;
+    padding-left: 58px;
+}
+
+.say__quot {
+    position: relative;;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.say__quot:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -30px;
+    background: url("../img/icons/quote-icon.svg") 0 0 / 100% no-repeat;
+    width: 28px;
+    height: 20px;
+    translate: -100% 0;
+}
+
+.say__user {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-top: 24px;
+}
+
+.say__avatar {
+    margin-right: 20px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.say__info {
+}
+
+.say__info-name {
+    font-weight: 700;
+    font-size: 16px;
+    color: #1e212c;
+}
+
+.say__info__position {
+    font-weight: 400;
+    font-size: 14px;
+    color: #787a80;
+}
+
+.say__left-btn {
+    margin-right: 85px;
+}
+
+.say__right-btn {
+    margin-left: 85px;
+}
+
+.say__dots .slick-dots {
+    display: flex;
+    margin-top: 45px;
+}
+
+.say__dots li {
+    margin-right: 12px;
+}
+.say__dots li:last-child {
+    margin-right: 0;
+}
+
+.say__dots button {
+    font-size: 0;
+    background-color: transparent;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.say__dots button:before {
+    content: "";
+    height: 3px;
+    width: 100%;
+    background-color: #b3b7bc;
+    border-radius: 3px;
+}
+
+.say__dots .slick-active button:before {
+    background-color: #424551;
+    transition: all .3s;
 }

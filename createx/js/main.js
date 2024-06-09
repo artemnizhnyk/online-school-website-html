@@ -8,3 +8,32 @@ directionsFilterBtns.forEach(btn => {
 });
 
 mixitup('.directions__body');
+
+$(document).ready(() =>{
+    $('.team-list').slick({
+        arrows: false,
+        slidesToShow: 4
+    });
+    $('.team__left-btn').on('click', e => {
+        e.preventDefault();
+        $('.team-list').slick('slickPrev');
+    });
+    $('.team__right-btn').on('click', e => {
+        e.preventDefault();
+        $('.team-list').slick('slickNext');
+    });
+
+    $('.say__slider').slick({
+        arrows: false,
+        dots: true,
+        appendDots: $('.say__dots')
+    });
+    $('.say__left-btn').on('click', e => {
+        e.preventDefault();
+        $('.say__slider').slick('slickPrev');
+    });
+    $('.say__right-btn').on('click', e => {
+        e.preventDefault();
+        $('.say__slider').slick('slickNext');
+    });
+});
